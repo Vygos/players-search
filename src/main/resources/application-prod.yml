@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/players-search?createDatabaseIfNotExists?true
-    username: root
-    password:
+    url: jdbc:mysql://localhost:3306/vptpznmyptdev02p?createDatabaseIfNotExists?true
+    username: ${DBUSER}
+    password: ${DBPASS}
   jpa:
     properties:
       hibernate:
