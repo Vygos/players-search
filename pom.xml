@@ -10,7 +10,7 @@
     </parent>
     <groupId>br.com.vygos</groupId>
     <artifactId>players-search</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <name>players-search</name>
     <description>Demo project for Spring Boot</description>
 
