@@ -16,6 +16,7 @@
 
     <properties>
         <java.version>11</java.version>
+        <app.profiles>dev</app.profiles>
     </properties>
 
     <dependencies>
@@ -33,6 +34,10 @@
             <artifactId>spring-boot-devtools</artifactId>
             <scope>runtime</scope>
             <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -63,6 +68,11 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <profiles>
+                        ${app.profiles}
+                    </profiles>
+                </configuration>
             </plugin>
         </plugins>
     </build>
