@@ -19,5 +19,3 @@ logging:
     name: teste
   level:
     - debug
-server:
-  port: 8080
