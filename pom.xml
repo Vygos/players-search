@@ -17,6 +17,8 @@
     <properties>
         <java.version>11</java.version>
         <app.profiles>dev</app.profiles>
+        <app.name>PLAYERS-SEARCH</app.name>
+        <spring.cloud-version>Hoxton.SR8</spring.cloud-version>
     </properties>
 
     <dependencies>
@@ -28,7 +30,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>

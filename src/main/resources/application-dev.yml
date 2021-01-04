@@ -10,12 +10,5 @@ spring:
     generate-ddl: false
     hibernate:
       ddl-auto: validate
-  main:
-    banner-mode: off
-  application:
-    name: @artifactId@
-logging:
-  file:
-    name: teste
   level:
     - debug
