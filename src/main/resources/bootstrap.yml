@@ -1,3 +1,6 @@
 spring:
   application:
     name: PLAYERS SEARCH
+  cloud:
+    config:
+      enabled: false
