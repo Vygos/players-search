@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jan 14 21:11:36 BRT 2021
+http\://binrepo.poupex.com.br/repository/public/.error=Could not transfer artifact org.springframework.boot\:spring-boot-starter-parent\:pom\:2.3.7.RELEASE from/to default (http\://binrepo.poupex.com.br/repository/public)\: Transfer failed for http\://binrepo.poupex.com.br/repository/public/org/springframework/boot/spring-boot-starter-parent/2.3.7.RELEASE/spring-boot-starter-parent-2.3.7.RELEASE.pom
+@default-default-http\://binrepo.poupex.com.br/repository/public/.lastUpdated=1610669496031
