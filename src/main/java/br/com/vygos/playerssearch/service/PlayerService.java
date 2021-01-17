@@ -7,6 +7,7 @@ import org.springframework.data.domain.Example;
 import org.springframework.data.domain.ExampleMatcher;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.List;
 
 @Service
@@ -14,6 +15,11 @@ public class PlayerService {
 
     @Autowired
     private PlayerRepository playerRepository;
+
+    @Transactional
+    public Player save(Player player) {
+        return playerRepository.save(player);
+    }
 
     public Player findById(Integer id) {
         return playerRepository.findById(id).orElse(null);

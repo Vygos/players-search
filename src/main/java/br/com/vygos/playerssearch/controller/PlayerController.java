@@ -5,7 +5,9 @@ import br.com.vygos.playerssearch.service.PlayerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Example;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
 
@@ -15,6 +17,11 @@ public class PlayerController {
 
     @Autowired
     private PlayerService playerService;
+
+    @PostMapping
+    public ResponseEntity<Player> save(@Validated @RequestBody Player player) {
+        return ResponseEntity.ok(playerService.save(player));
+    }
 
     @GetMapping
     public ResponseEntity<List<Player>> findAll() {
